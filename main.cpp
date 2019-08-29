@@ -56,7 +56,11 @@ int main(int argc, char *argv[])
     //QML
     QQmlApplicationEngine engine;
 
-    //
+    //Some variables
+    engine.rootContext()->setContextProperty("APP_NAME", QCoreApplication::applicationName());
+    engine.rootContext()->setContextProperty("APP_VERSION", QCoreApplication::applicationVersion());
+    engine.rootContext()->setContextProperty("ORGANIZATION_NAME", QCoreApplication::organizationName());
+    engine.rootContext()->setContextProperty("ORGANIZATION_DOMAIN", QCoreApplication::organizationDomain());
     engine.rootContext()->setContextProperty("QT_VERSION", QString(qVersion()));
     engine.rootContext()->setContextProperty("BUILD_CPU_ARCH", QString(QSysInfo::buildCpuArchitecture()));
     engine.rootContext()->setContextProperty("BUILD_DATE", QString("%1 %2").arg(__DATE__).arg(__TIME__));

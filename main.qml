@@ -38,10 +38,16 @@ Window {
         x: parent.width / 2 - width / 2
         y: parent.height / 2 - height / 2
         Label {
-            text: qsTr("Some Label")
+            text:
+                APP_NAME + " " + APP_VERSION + "\n" +
+                ORGANIZATION_NAME + "\n" +
+                ORGANIZATION_DOMAIN + "\n" +
+                "Qt: " + QT_VERSION + " " + BUILD_CPU_ARCH + "\n" +
+                "Build Date: " + BUILD_DATE
+
             anchors.fill: parent
             color: "white"
-            font.pointSize: 20
+            font.pointSize: 12
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
         }
