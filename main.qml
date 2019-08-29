@@ -4,7 +4,7 @@ import Core.Core 1.0
 import QtQuick.Controls 2.12
 import Qt.labs.settings 1.1
 
-Window {
+ApplicationWindow {
     id: mainWindow
     visible: true
     minimumHeight: 250

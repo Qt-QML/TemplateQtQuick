@@ -14,17 +14,16 @@
         <translation>Какая-то кнопка</translation>
     </message>
     <message>
-        <location filename="main.qml" line="41"/>
         <source>Some Label</source>
-        <translation>Какой-то текст</translation>
+        <translation type="vanished">Какой-то текст</translation>
     </message>
     <message>
-        <location filename="main.qml" line="73"/>
+        <location filename="main.qml" line="79"/>
         <source>Some Button 1</source>
         <translation>Какая-то кнопка 1</translation>
     </message>
     <message>
-        <location filename="main.qml" line="79"/>
+        <location filename="main.qml" line="85"/>
         <source>Some Button 2</source>
         <translation>Какая-то кнопка 2</translation>
     </message>
