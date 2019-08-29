@@ -1,3 +1,5 @@
-deploy
 build
+deploy
+windows_installers
+
 *.pro.user
